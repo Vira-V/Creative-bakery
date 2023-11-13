@@ -1,6 +1,26 @@
 .article {
-    &__image {
-        width: 288px;
-        height: 356px;
+  &__image {
+    width: 288px;
+    height: 356px;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f9512e;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      background-image: url(/images/icons/Icon-arrow.png);
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
     }
+  }
 }
