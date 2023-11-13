@@ -1,0 +1,12 @@
+.data {
+  &__number {
+    color: var(--Black, #1C1A26);
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%;
+    letter-spacing: -4.8px;
+    text-transform: uppercase;
+  }
+}

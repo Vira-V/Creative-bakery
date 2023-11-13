@@ -3,3 +3,9 @@
 @import "./blocks/title";
 @import "./blocks/header";
 @import "./blocks/main.scss";
+@import "./blocks/article.scss";
+@import "./blocks/data.scss";
+
+body {
+    background-color: var(--Light-Blue, #EEF7FF);
+}
