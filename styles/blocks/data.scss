@@ -1,0 +1,17 @@
+.data {
+  background-image: url(/images/Crumbs.png);
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  background-size: contain;
+
+  &__number {
+    color: var(--Black, #1c1a26);
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%;
+    letter-spacing: -4.8px;
+    text-transform: uppercase;
+  }
+}

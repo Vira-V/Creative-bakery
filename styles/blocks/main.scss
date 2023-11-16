@@ -1,0 +1,25 @@
+.main {
+  padding: 64px 16px 72px;
+  color: var(--Black, #1c1a26);
+  font-family: Inter;
+  text-align: left;
+  background-color: var(--Light-Blue, #EEF7FF);
+
+  &__paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-style: normal;
+    color: var(--Grey, #7f8096);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+  }
+}
