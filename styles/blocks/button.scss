@@ -26,4 +26,29 @@
         color: #f9512e;
         font-weight: 500;
     }
+
+    &__article {
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        padding: 4px 0px;
+    
+        &::before {
+          content: "";
+          background-image: url(/images/icons/Icon-arrow.png);
+          width: 24px;
+          height: 24px;
+          margin-right: 4px;
+        }
+        &--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #f9512e;
+        display: flex;
+        align-items: center;
+        }
+      }
   }
