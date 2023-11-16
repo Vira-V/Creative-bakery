@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navigation">
         <a href="#header">
           <img src="images/Logo.png" alt="Logo" class="header__logo" />
         </a>
-        <a href="#menu" class="header__menu-link">
+        <a href="#menu" class="header__menu-link" id="menu-icon">
           <img src="/images/icons/Icon-menu.png" alt="menu" />
         </a>
       </nav>
@@ -33,12 +33,12 @@
       </a>
     </header>
 
-    <div class="menu">
+    <div class="menu" id="menu">
       <nav class="navigation">
         <a href="#header">
           <img src="images/Logo.png" alt="Logo" class="header__logo" />
         </a>
-        <a href="#menu" class="header__menu-link">
+        <a href="#" class="header__menu-link" id="header">
           <img src="/images/icons/Icon-close.png" alt="menu" />
         </a>
       </nav>
@@ -46,20 +46,20 @@
       <nav class="links">
         <ul class="links__list">
           <li class="links__item">
-            <a href="" class="links__link">Products</a>
+            <a href="#products" class="links__link">Products</a>
           </li>
           <li class="links__item">
-            <a href="" class="links__link">About Us</a>
+            <a href="#about" class="links__link">About Us</a>
           </li>
-          <li class="links__item"><a href="" class="links__link">Blog</a></li>
+          <li class="links__item"><a href="#" class="links__link">Blog</a></li>
         </ul>
       </nav>
-      <a href="#" class="button button__contact">
+      <a href="#contact" class="button button__contact">
         <span class="button__text">Contact us</span>
       </a>
     </div>
 
-    <main class="main">
+    <main class="main" id="products">
       <section class="section">
         <h2 class="title title--secondary">What we bake</h2>
         <p class="main__paragraph">
@@ -161,7 +161,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="about">
         <h2 class="title title--secondary">Few words About us</h2>
         <p class="main__paragraph">
           Like many design teams, Onfido made the transition from Abstract +
@@ -203,7 +203,7 @@
         <a href="#" class="footer__menu--item">Terms & Privacy</a>
       </div>
 
-      <address class="footer__contact">
+      <address class="footer__contact" id="contact">
         <h2 class="title title--secondary">Contact us</h2>
         <div class="footer__contact--phone">
           <h3 class="main__name">Call us</h3>
