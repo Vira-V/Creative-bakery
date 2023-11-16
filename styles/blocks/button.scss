@@ -1,0 +1,29 @@
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 71px;
+    border: 2px solid var(--Accent-Orange, #F9512E);
+    border-radius: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      background-image: url(images/icons/Icon-cookie.png);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      margin-right: 4px;
+      display: inline-block;
+    }
+
+    &__text {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        line-height: 100%;
+        color: #f9512e;
+        font-weight: 500;
+    }
+  }

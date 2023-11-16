@@ -1,14 +1,15 @@
 .header {
-    background-color: var(--Light-Blue, #EEF7FF);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 16px 40px;
-    box-sizing: border-box;
+  background-color: var(--Light-Blue, #eef7ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px 40px;
+  box-sizing: border-box;
 
-    &__image {
-        width: 288px;
-        height: 290px; 
-    }
+  &__image {
+    width: 288px;
+    height: 290px;
+  }
+
 }
