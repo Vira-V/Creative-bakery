@@ -1,13 +1,88 @@
 .button {
   position: relative;
   display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f9512e;
+    display: flex;
+    align-items: center;
+  }
+
+  &__article {
+    padding: 4px 0px;
+
+    &::before {
+      content: "";
+      background-image: url(/images/icons/Icon-arrow.png);
+      width: 24px;
+      height: 24px;
+      margin-right: 4px;
+    }
+  }
+
+  &__contact {
+    padding: 4px 0px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+
+    &:hover {
+      border-bottom: 1px solid #f9512e;
+    }
+
+    &::before {
+      content: "";
+      background-image: url(/images/icons/Icon-phone.png);
+      width: 24px;
+      height: 24px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.button__main {
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   padding: 20px 71px;
   border: 2px solid var(--Accent-Orange, #f9512e);
   border-radius: 32px;
-  text-transform: uppercase;
-  text-decoration: none;
+
+  &:hover {
+    background-color: #f9512e;
+    color: var(--White, #fff);
+
+    .button__main--text {
+      color: #fff;
+    }
+
+    &::before {
+      filter: brightness(0) invert(1);
+    }
+
+    &:focus {
+      background-color: var(--Dark-Orange, #b2341a);
+      color: var(--White, #fff);
+      border: 2px solid var(--Accent-Orange, #b2341a);
+
+      .button__main--text {
+        color: #fff;
+      }
+
+      &::before {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
 
   &::before {
     content: "";
@@ -19,61 +94,14 @@
     display: inline-block;
   }
 
-  &__text {
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    line-height: 100%;
-    color: #f9512e;
+  &--text {
     font-weight: 500;
-  }
-
-  &__article {
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f9512e;
     display: flex;
-    position: relative;
-    text-decoration: none;
-    padding: 4px 0px;
-
-    &::before {
-      content: "";
-      background-image: url(/images/icons/Icon-arrow.png);
-      width: 24px;
-      height: 24px;
-      margin-right: 4px;
-    }
-    &--text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      color: #f9512e;
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &__contact {
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    padding: 4px 0px;
-
-    &::before {
-      content: "";
-      background-image: url(/images/icons/Icon-phone.png);
-      width: 24px;
-      height: 24px;
-      margin-right: 4px;
-    }
-    &--text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 100%;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      color: #f9512e;
-      display: flex;
-      align-items: center;
-    }
+    align-items: center;
   }
 }
