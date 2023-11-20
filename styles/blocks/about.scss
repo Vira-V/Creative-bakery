@@ -1,0 +1,19 @@
+.about {
+    @media (min-width: 640px) {
+      background-image: url(/images/Crumbs.png);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      padding-top: 100px;
+    }
+    &__title {
+      @media (min-width: 640px) {
+        grid-column: 1 / 5;
+      }
+    }
+    &__paragraph {
+      @media (min-width: 640px) {
+        grid-column: 5 / 9;
+      }
+    }
+  }
+  
