@@ -9,9 +9,29 @@
     gap: 24px;
   }
 
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(8, 118px);
+    gap: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(8, 128px);
+    gap: 24px;
+  }
+
   &__name {
     margin-top: 16px;
     margin-bottom: 8px;
+  }
+
+  &__paragraph {
+    @media (min-width: 640px) {
+      width: 328px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 402px;
+    }
   }
 
   &__image {
@@ -19,6 +39,16 @@
     width: 288px;
     height: 356px;
     border-radius: 10px;
+
+    @media (min-width: 640px) {
+      width: 328px;
+      height: 424px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 402px;
+      height: 512px;
+    }
   }
 
   &__card {
@@ -28,11 +58,33 @@
       @media (min-width: 640px) {
         grid-column: 1 / 4;
       }
+
+      @media (min-width: 1024px) {
+        grid-column: 1 / 4;
+      }
     }
 
     &:nth-child(even) {
       @media (min-width: 640px) {
         grid-column: 5 / 9;
+      }
+    }
+
+    &:nth-child(2n) {
+      @media (min-width: 1024px) {
+        grid-column: 4 / 9;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (min-width: 1024px) {
+        grid-column: 3 / 6;
+      }
+    }
+
+    &:nth-child(4) {
+      @media (min-width: 1024px) {
+        grid-column: 6 / 9;
       }
     }
   }

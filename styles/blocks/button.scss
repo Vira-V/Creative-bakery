@@ -58,6 +58,10 @@
   border: 2px solid var(--Accent-Orange, #f9512e);
   border-radius: 32px;
 
+  @media (min-width: 1024px) {
+    padding: 15px 60px;
+  }
+
   &:hover {
     background-color: #f9512e;
     color: var(--White, #fff);

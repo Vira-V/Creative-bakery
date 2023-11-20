@@ -1,19 +1,29 @@
 .about {
+  @media (min-width: 640px) {
+    background-image: url(/images/Crumbs.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(8, 118px);
+      gap: 24px;
+    }
+
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(8, 128px);
+        gap: 24px;
+      }
+  }
+
+  &__title {
     @media (min-width: 640px) {
-      background-image: url(/images/Crumbs.png);
-      background-repeat: no-repeat;
-      background-position: 50%;
-      padding-top: 100px;
-    }
-    &__title {
-      @media (min-width: 640px) {
-        grid-column: 1 / 5;
-      }
-    }
-    &__paragraph {
-      @media (min-width: 640px) {
-        grid-column: 5 / 9;
-      }
+      grid-column: 1 / 5;
     }
   }
-  
+
+  &__paragraph {
+    @media (min-width: 640px) {
+      grid-column: 5 / 9;
+    }
+  }
+}
