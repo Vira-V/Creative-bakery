@@ -50,13 +50,13 @@
 .button__main {
   position: relative;
   display: flex;
-  text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
   align-items: center;
   padding: 20px 71px;
   border: 2px solid var(--Accent-Orange, #f9512e);
   border-radius: 32px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 
   @media (min-width: 1024px) {
     padding: 15px 60px;
