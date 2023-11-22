@@ -160,7 +160,7 @@ table {
 .header__image {
   grid-column: 1/3;
   margin: 0;
-  background-image: url(/images/Cookie.png);
+  background-image: url(images/Cookie.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -276,7 +276,7 @@ table {
 }
 
 .data {
-  background-image: url(/images/Crumbs.png);
+  background-image: url(images/Crumbs.png);
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: contain;
@@ -500,7 +500,7 @@ table {
 }
 .button__article::before {
   content: "";
-  background-image: url(/images/icons/Icon-arrow.png);
+  background-image: url(images/icons/Icon-arrow.png);
   width: 24px;
   height: 24px;
   margin-right: 4px;
@@ -515,7 +515,7 @@ table {
 }
 .button__contact::before {
   content: "";
-  background-image: url(/images/icons/Icon-phone.png);
+  background-image: url(images/icons/Icon-phone.png);
   width: 24px;
   height: 24px;
   margin-right: 4px;
@@ -710,17 +710,17 @@ table {
   }
 
 .footer__icon--item-facebook {
-  background-image: url(/images/icons/Icon-facebook.png);
+  background-image: url(images/icons/Icon-facebook.png);
   background-repeat: no-repeat;
 }
 
 .footer__icon--item-instagram {
-  background-image: url(/images/icons/Icon-instagram.png);
+  background-image: url(images/icons/Icon-instagram.png);
   background-repeat: no-repeat;
 }
 
 .footer__icon--item-twitter {
-  background-image: url(/images/icons/Icon-twitter.png);
+  background-image: url(images/icons/Icon-twitter.png);
   background-repeat: no-repeat;
 }
 
@@ -801,7 +801,7 @@ table {
 
 @media (min-width: 640px) {
   .about {
-    background-image: url(/images/Crumbs.png);
+    background-image: url(images/Crumbs.png);
     background-repeat: no-repeat;
     background-position: 50%;
   }
