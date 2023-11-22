@@ -18,6 +18,13 @@
   &__article {
     padding: 4px 0px;
     margin-top: 16px;
+    border-bottom: 1px solid transparent;
+    width: 90px;
+
+    &:hover {
+      border-bottom: 1px solid #f9512e;
+      width: 90px;
+    }
 
     &::before {
       content: "";
