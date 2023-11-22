@@ -116,36 +116,27 @@
     &--item {
       width: 20px;
       height: 20px;
+      filter: brightness(1) invert(0);
+      transition: filter 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+        filter: brightness(0) invert(1);
+      }
 
       &-facebook {
-        background-image: url(/images/icons/facebook.svg);
+        background-image: url(/images/icons/Icon-facebook.png);
         background-repeat: no-repeat;
-        &:hover,
-        &:active {
-          background-image: url(/images/icons/Icon-facebook-hover.svg);
-          background-repeat: no-repeat;
-        }
       }
 
       &-instagram {
-        background-image: url(/images/icons/instagram.svg);
+        background-image: url(/images/icons/Icon-instagram.png);
         background-repeat: no-repeat;
-
-        &:hover,
-        &:active {
-          background-image: url(/images/icons/Icon-instagram-hover.svg);
-          background-repeat: no-repeat;
-        }
       }
 
       &-twitter {
-        background-image: url(/images/icons/twitter.svg);
+        background-image: url(/images/icons/Icon-twitter.png);
         background-repeat: no-repeat;
-
-        &:hover,
-        &:active {
-          background-image: url(/images/icons/Icon-twitter-hover.svg);
-        }
       }
     }
   }
