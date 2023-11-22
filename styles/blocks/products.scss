@@ -39,6 +39,11 @@
     width: 288px;
     height: 356px;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translate(0, -10%);
+    }
 
     @media (min-width: 640px) {
       width: 328px;
